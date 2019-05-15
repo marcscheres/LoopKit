@@ -227,7 +227,7 @@ extension Collection where Element: CarbEntry {
         from start: Date? = nil,
         to end: Date? = nil,
         defaultAbsorptionTime: TimeInterval,
-        delay: TimeInterval = TimeInterval(minutes: 10),
+        delay: TimeInterval = TimeInterval(minutes: 22),
         delta: TimeInterval = TimeInterval(minutes: 5)
     ) -> [CarbValue] {
         guard let (startDate, endDate) = simulationDateRange(from: start, to: end, defaultAbsorptionTime: defaultAbsorptionTime, delay: delay, delta: delta) else {
@@ -255,7 +255,7 @@ extension Collection where Element: CarbEntry {
         carbRatios: CarbRatioSchedule,
         insulinSensitivities: InsulinSensitivitySchedule,
         defaultAbsorptionTime: TimeInterval,
-        delay: TimeInterval = TimeInterval(minutes: 10),
+        delay: TimeInterval = TimeInterval(minutes: 22),
         delta: TimeInterval = TimeInterval(minutes: 5)
     ) -> [GlucoseEffect] {
         guard let (startDate, endDate) = simulationDateRange(from: start, to: end, defaultAbsorptionTime: defaultAbsorptionTime, delay: delay, delta: delta) else {
@@ -312,7 +312,7 @@ extension Collection {
         from start: Date? = nil,
         to end: Date? = nil,
         defaultAbsorptionTime: TimeInterval,
-        delay: TimeInterval = TimeInterval(minutes: 10),
+        delay: TimeInterval = TimeInterval(minutes: 22),
         delta: TimeInterval = TimeInterval(minutes: 5)
     ) -> [CarbValue] where Element == CarbStatus<T> {
         guard let (startDate, endDate) = simulationDateRange(from: start, to: end, defaultAbsorptionTime: defaultAbsorptionTime, delay: delay, delta: delta) else {
@@ -345,7 +345,7 @@ extension Collection {
         carbRatios: CarbRatioSchedule,
         insulinSensitivities: InsulinSensitivitySchedule,
         defaultAbsorptionTime: TimeInterval,
-        delay: TimeInterval = TimeInterval(minutes: 10),
+        delay: TimeInterval = TimeInterval(minutes: 22),
         delta: TimeInterval = TimeInterval(minutes: 5)
     ) -> [GlucoseEffect] where Element == CarbStatus<T> {
         guard let (startDate, endDate) = simulationDateRange(from: start, to: end, defaultAbsorptionTime: defaultAbsorptionTime, delay: delay, delta: delta) else {

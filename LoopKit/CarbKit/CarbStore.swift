@@ -194,7 +194,7 @@ public final class CarbStore: HealthKitSampleStore {
         syncVersion: Int = 1,
         absorptionTimeOverrun: Double = 1.5,
         calculationDelta: TimeInterval = 5 /* minutes */ * 60,
-        effectDelay: TimeInterval = 10 /* minutes */ * 60
+        effectDelay: TimeInterval = 22 /* minutes */ * 60
     ) {
         self.cacheStore = cacheStore
         self.defaultAbsorptionTimes = defaultAbsorptionTimes
